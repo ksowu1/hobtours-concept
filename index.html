@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HOBTOURS creates private, tailor-made journeys across Africa with local insight and personal support.">
+  <meta name="theme-color" content="#17251e">
+  <title>HOBTOURS — Tailor-made journeys across Africa</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2317251e'/%3E%3Cpath d='M17 14v36M47 14v36M18 32h28' fill='none' stroke='%23f1b24a' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="HOBTOURS home">
+      <span class="brand-mark">H</span>
+      <span class="brand-name">HOBTOURS</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span>
+      <span class="sr-only">Open navigation</span>
+    </button>
+    <nav id="primary-nav" aria-label="Primary navigation">
+      <a href="#destinations">Destinations</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#about">Our story</a>
+      <button class="nav-cta js-open-planner" type="button">Plan your trip</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" role="img" aria-label="Elephants crossing an open African landscape"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">Private journeys · Local perspective</p>
+        <h1 id="hero-title">Africa,<br><em>made personal.</em></h1>
+        <p class="hero-copy">Thoughtful journeys across the continent, shaped around what moves you—culture, coastlines, wildlife, food and the people who bring each place to life.</p>
+        <div class="hero-actions">
+          <button class="button button-gold js-open-planner" type="button">Design my journey <span aria-hidden="true">↗</span></button>
+          <a class="text-link light-link" href="#destinations">Explore Africa <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="hero-proof" aria-label="HOBTOURS highlights">
+        <div><strong>2019</strong><span>Our journey began</span></div>
+        <div><strong>100+</strong><span>Travellers welcomed</span></div>
+        <div><strong>1 trip</strong><span>Built around you</span></div>
+      </div>
+    </section>
+
+    <section class="intro section-pad" id="about">
+      <div class="section-number">01</div>
+      <div class="intro-copy">
+        <p class="eyebrow">Meet Africa differently</p>
+        <h2>Not a checklist.<br>A journey with <em>meaning.</em></h2>
+      </div>
+      <div class="intro-detail">
+        <p>HOBTOURS began in Lomé with one belief: the most memorable trips feel personal. Today, we create journeys across Africa that pair trusted local knowledge with the freedom to travel your way.</p>
+        <p>Whether you are returning to your roots, planning your first safari, chasing the coast or bringing a group together, we take care of the details from the first conversation to the journey home.</p>
+        <button class="text-link dark-link js-open-planner" type="button">Tell us what you’re dreaming of <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <section class="destinations" id="destinations" aria-labelledby="destinations-title">
+      <div class="destinations-head section-pad">
+        <div>
+          <p class="eyebrow">A continent of stories</p>
+          <h2 id="destinations-title">Where will Africa<br>take you?</h2>
+        </div>
+        <p>Start with a region, a feeling or a place you have always wanted to see. We will connect the pieces into one seamless journey.</p>
+      </div>
+
+      <div class="region-tabs" role="tablist" aria-label="Filter destinations by region">
+        <button class="region-tab active" role="tab" aria-selected="true" data-region="all">All Africa</button>
+        <button class="region-tab" role="tab" aria-selected="false" data-region="west">West</button>
+        <button class="region-tab" role="tab" aria-selected="false" data-region="east">East</button>
+        <button class="region-tab" role="tab" aria-selected="false" data-region="south">Southern</button>
+        <button class="region-tab" role="tab" aria-selected="false" data-region="north">North</button>
+      </div>
+
+      <div class="destination-grid">
+        <article class="destination-card card-west" data-region="west">
+          <div class="card-image card-image-west"></div>
+          <div class="card-overlay"></div>
+          <div class="card-content"><span>West Africa</span><h3>Ghana · Togo · Benin</h3><p>Living heritage, coastal cities and homecoming journeys.</p></div>
+        </article>
+        <article class="destination-card card-east" data-region="east">
+          <div class="card-image card-image-east"></div>
+          <div class="card-overlay"></div>
+          <div class="card-content"><span>East Africa</span><h3>Kenya · Tanzania · Rwanda</h3><p>Wild landscapes, remarkable wildlife and soulful encounters.</p></div>
+        </article>
+        <article class="destination-card card-south" data-region="south">
+          <div class="card-image card-image-south"></div>
+          <div class="card-overlay"></div>
+          <div class="card-content"><span>Southern Africa</span><h3>South Africa · Namibia · Botswana</h3><p>Design-led cities, open desert and extraordinary safari.</p></div>
+        </article>
+        <article class="destination-card card-north" data-region="north">
+          <div class="card-image card-image-north"></div>
+          <div class="card-overlay"></div>
+          <div class="card-content"><span>North Africa</span><h3>Morocco · Egypt · Tunisia</h3><p>Ancient cities, desert nights and Mediterranean light.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="experiences section-pad" id="experiences">
+      <div class="section-number">02</div>
+      <div class="experiences-title">
+        <p class="eyebrow">Travel your way</p>
+        <h2>Start with what<br>you <em>love.</em></h2>
+      </div>
+      <div class="experience-list">
+        <button class="experience-item" type="button" data-interest="Culture & Heritage">
+          <span class="experience-index">01</span><span class="experience-name">Culture & heritage</span><span class="experience-arrow">↗</span>
+        </button>
+        <button class="experience-item" type="button" data-interest="Safari & Wildlife">
+          <span class="experience-index">02</span><span class="experience-name">Safari & wildlife</span><span class="experience-arrow">↗</span>
+        </button>
+        <button class="experience-item" type="button" data-interest="Coast & Islands">
+          <span class="experience-index">03</span><span class="experience-name">Coast & islands</span><span class="experience-arrow">↗</span>
+        </button>
+        <button class="experience-item" type="button" data-interest="Roots & Homecoming">
+          <span class="experience-index">04</span><span class="experience-name">Roots & homecoming</span><span class="experience-arrow">↗</span>
+        </button>
+        <button class="experience-item" type="button" data-interest="Groups & Celebrations">
+          <span class="experience-index">05</span><span class="experience-name">Groups & celebrations</span><span class="experience-arrow">↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="promise">
+      <div class="promise-image" role="img" aria-label="Travellers taking in an African landscape"></div>
+      <div class="promise-copy">
+        <p class="eyebrow light">The HOBTOURS way</p>
+        <h2>Locally rooted.<br>Personally planned.</h2>
+        <div class="promise-points">
+          <div><span>01</span><p><strong>It starts with you</strong>Your pace, your interests and your reason for travelling shape every decision.</p></div>
+          <div><span>02</span><p><strong>Insight from the ground</strong>We work with people who know their destinations beyond the guidebook.</p></div>
+          <div><span>03</span><p><strong>Supported throughout</strong>Clear planning before you leave and personal care while you are away.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="founder section-pad" aria-labelledby="founder-title">
+      <div class="founder-stamp" aria-hidden="true"><span>BO</span><small>Lomé · Togo</small></div>
+      <div class="founder-quote">
+        <p class="eyebrow">Meet your travel specialist</p>
+        <h2 id="founder-title">Africa is not one story. Every journey should reveal its richness.</h2>
+        <p class="founder-name"><strong>Bernice Owoh</strong> · Founder of HOBTOURS</p>
+      </div>
+      <div class="founder-bio">
+        <p>Born in Ghana to Nigerian parents and based in Togo, Bernice brings a naturally pan-African perspective to every journey. With more than six years in travel and tourism, she has personally guided over 100 travellers across the continent.</p>
+        <p>Her approach is warm, practical and deeply personal: understand the traveller first, then build the Africa experience around them.</p>
+      </div>
+    </section>
+
+    <section class="process section-pad">
+      <div class="section-number">03</div>
+      <div class="process-intro">
+        <p class="eyebrow">Simple by design</p>
+        <h2>Your trip,<br>in three steps.</h2>
+      </div>
+      <ol class="process-steps">
+        <li><span>01</span><div><h3>Share your vision</h3><p>Tell us where you want to go—or simply how you want the trip to feel.</p></div></li>
+        <li><span>02</span><div><h3>Shape it together</h3><p>We build a considered itinerary and refine every detail with you.</p></div></li>
+        <li><span>03</span><div><h3>Travel with confidence</h3><p>Arrive knowing the logistics are handled and support is close by.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="closing">
+      <div class="closing-line"><span>Togo</span><span>Kenya</span><span>Morocco</span><span>Namibia</span><span>Ghana</span><span>Rwanda</span></div>
+      <div class="closing-content">
+        <p class="eyebrow light">The journey starts here</p>
+        <h2>Where in Africa<br>are you dreaming of?</h2>
+        <button class="button button-gold js-open-planner" type="button">Plan my journey <span aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top"><span class="brand-mark">H</span><span class="brand-name">HOBTOURS</span></a>
+    <p>Tailor-made journeys across Africa.<br>Born in Lomé, travelling further.</p>
+    <div class="footer-links"><a href="mailto:houseofbennyhob@gmail.com">Email</a><a href="https://wa.me/22898854118">WhatsApp</a><button class="js-open-planner" type="button">Trip enquiry</button></div>
+    <small>© <span id="year"></span> HOBTOURS. Website concept.</small>
+    <details class="photo-credits"><summary>Photography credits</summary><p><a href="https://commons.wikimedia.org/wiki/File:A_Bath_During_Sunset_(180185055).jpeg">Elephants: Georg Botz</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:View_over_Fishing_Village_from_Door_of_No_Return_-_Cape_Coast_Castle_-_Cape_Coast_-_Ghana_(4721070633).jpg">Cape Coast: Adam Jones</a> / <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Sossusvlei,_Namibia,_2018-08-06,_DD_050-054_PAN.jpg">Namibia: Diego Delso, delso.photo</a> / <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p></details>
+  </footer>
+
+  <dialog class="planner" id="trip-planner" aria-labelledby="planner-title">
+    <div class="planner-panel">
+      <button class="planner-close" type="button" aria-label="Close trip planner">×</button>
+      <p class="eyebrow">Your Africa journey</p>
+      <h2 id="planner-title">Let’s start with<br>a few details.</h2>
+      <form id="planner-form">
+        <label>Your name<input name="name" autocomplete="name" required placeholder="How should we address you?"></label>
+        <label>Email address<input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label>
+        <label>Where would you like to go?<input name="destination" placeholder="A country, region—or 'help me choose'"></label>
+        <label>What kind of journey?<select name="interest" id="interest-select"><option value="">Choose an experience</option><option>Culture & Heritage</option><option>Safari & Wildlife</option><option>Coast & Islands</option><option>Roots & Homecoming</option><option>Groups & Celebrations</option></select></label>
+        <div class="form-row"><label>Travellers<input type="number" name="travellers" min="1" value="2"></label><label>Ideal timing<input name="timing" placeholder="Month or season"></label></div>
+        <label>Tell us more<textarea name="notes" rows="4" placeholder="What would make this trip unforgettable?"></textarea></label>
+        <button class="button button-dark" type="submit">Send my enquiry <span aria-hidden="true">→</span></button>
+        <p class="form-note">Concept form for presentation. Contact details will be connected before launch.</p>
+      </form>
+      <div class="form-success" hidden><span>✓</span><h3>Your idea is ready to share.</h3><p>This prototype does not send submissions yet. At launch, this can connect to HOBTOURS email, WhatsApp or a booking system.</p><button class="button button-dark planner-done" type="button">Done</button></div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

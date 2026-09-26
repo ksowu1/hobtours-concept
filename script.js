@@ -106,7 +106,7 @@ function closePlanner() {
 
 document.querySelectorAll('.js-open-planner').forEach(button => button.addEventListener('click', () => openPlanner()));
 document.querySelectorAll('.experience-item').forEach(button => button.addEventListener('click', () => openPlanner(button.dataset.interest)));
-document.querySelectorAll('.destination-action').forEach(button => button.addEventListener('click', () => openPlanner('', button.dataset.destination)));
+document.querySelectorAll('.destination-action[data-destination]').forEach(button => button.addEventListener('click', () => openPlanner('', button.dataset.destination)));
 document.querySelector('.planner-close').addEventListener('click', closePlanner);
 document.querySelector('.planner-done').addEventListener('click', closePlanner);
 planner.addEventListener('click', event => { if (event.target === planner) closePlanner(); });

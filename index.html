@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://ksowu1.github.io/hobtours-concept/">
   <meta name="twitter:card" content="summary">
   <title>HOBTOURS — Tailor-made journeys across Africa</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2317251e'/%3E%3Cpath d='M17 14v36M47 14v36M18 32h28' fill='none' stroke='%23f1b24a' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
@@ -45,6 +45,7 @@
       <a href="#destinations">Destinations</a>
       <a href="#experiences">Experiences</a>
       <a href="group-trips.html">Group trips</a>
+      <a href="blog.html">Blog</a>
       <a href="#about">Our story</a>
       <a href="#contact">Contact</a>
       <button class="nav-cta js-open-planner" type="button">Plan your trip</button>
@@ -54,10 +55,10 @@
   <main id="main-content">
     <section class="hero" aria-labelledby="hero-title" aria-roledescription="carousel">
       <div class="hero-slides" aria-hidden="true">
-        <div class="hero-media hero-media-safari is-active"></div>
-        <div class="hero-media hero-media-west"></div>
-        <div class="hero-media hero-media-north"></div>
-        <div class="hero-media hero-media-south"></div>
+        <picture class="hero-media hero-media-safari is-active"><source type="image/webp" srcset="hero-elephants-720.webp 720w, hero-elephants-1600.webp 1600w"><img src="hero-elephants.jpg" srcset="hero-elephants.jpg 2048w" sizes="100vw" alt="" fetchpriority="high"></picture>
+        <picture class="hero-media hero-media-west"><source type="image/webp" srcset="west-africa-ghana-720.webp 720w, west-africa-ghana-1600.webp 1600w"><img src="west-africa-ghana.jpg" srcset="west-africa-ghana.jpg 2200w" sizes="100vw" alt=""></picture>
+        <picture class="hero-media hero-media-north"><source type="image/webp" srcset="north-africa-egypt-720.webp 720w, north-africa-egypt-1600.webp 1600w"><img src="north-africa-egypt.jpg" srcset="north-africa-egypt.jpg 2400w" sizes="100vw" alt=""></picture>
+        <picture class="hero-media hero-media-south"><source type="image/webp" srcset="southern-africa-namibia-720.webp 720w, southern-africa-namibia-1600.webp 1600w"><img src="southern-africa-namibia.jpg" srcset="southern-africa-namibia.jpg 3840w" sizes="100vw" alt=""></picture>
       </div>
       <div class="hero-shade"></div>
       <div class="hero-content">
@@ -150,24 +151,28 @@
 
       <div class="destination-grid" aria-live="polite">
         <article class="destination-card card-west" data-region="west">
-          <div class="card-image card-image-west"></div>
+          <picture class="card-image card-image-west"><source type="image/webp" srcset="west-africa-ghana-720.webp 720w, west-africa-ghana-1600.webp 1600w"><img src="west-africa-ghana.jpg" srcset="west-africa-ghana.jpg 2200w" sizes="(max-width: 640px) 100vw, (max-width: 1080px) 50vw, 25vw" alt="Cape Coast in Ghana" loading="lazy"></picture>
           <div class="card-overlay"></div>
           <div class="card-content"><span>West Africa</span><h3>Ghana · Togo · Benin</h3><p>Living heritage, coastal cities and homecoming journeys.</p></div>
+          <button class="destination-action" type="button" data-destination="Ghana, Togo or Benin"><span class="sr-only">Plan a journey to Ghana, Togo or Benin</span></button>
         </article>
         <article class="destination-card card-east" data-region="east">
-          <div class="card-image card-image-east"></div>
+          <picture class="card-image card-image-east"><source type="image/webp" srcset="hero-elephants-720.webp 720w, hero-elephants-1600.webp 1600w"><img src="hero-elephants.jpg" srcset="hero-elephants.jpg 2048w" sizes="(max-width: 640px) 100vw, (max-width: 1080px) 50vw, 25vw" alt="Elephants at sunset in East Africa" loading="lazy"></picture>
           <div class="card-overlay"></div>
           <div class="card-content"><span>East Africa</span><h3>Kenya · Tanzania · Rwanda</h3><p>Wild landscapes, remarkable wildlife and soulful encounters.</p></div>
+          <button class="destination-action" type="button" data-destination="Kenya, Tanzania or Rwanda"><span class="sr-only">Plan a journey to Kenya, Tanzania or Rwanda</span></button>
         </article>
         <article class="destination-card card-south" data-region="south">
-          <div class="card-image card-image-south"></div>
+          <picture class="card-image card-image-south"><source type="image/webp" srcset="southern-africa-namibia-720.webp 720w, southern-africa-namibia-1600.webp 1600w"><img src="southern-africa-namibia.jpg" srcset="southern-africa-namibia.jpg 3840w" sizes="(max-width: 640px) 100vw, (max-width: 1080px) 50vw, 25vw" alt="The red dunes of Namibia" loading="lazy"></picture>
           <div class="card-overlay"></div>
           <div class="card-content"><span>Southern Africa</span><h3>South Africa · Namibia · Botswana</h3><p>Design-led cities, open desert and extraordinary safari.</p></div>
+          <button class="destination-action" type="button" data-destination="South Africa, Namibia or Botswana"><span class="sr-only">Plan a journey to South Africa, Namibia or Botswana</span></button>
         </article>
         <article class="destination-card card-north" data-region="north">
-          <div class="card-image card-image-north"></div>
+          <picture class="card-image card-image-north"><source type="image/webp" srcset="north-africa-morocco-720.webp 720w, north-africa-morocco-1600.webp 1600w"><img src="north-africa-morocco.jpg" srcset="north-africa-morocco.jpg 2400w" sizes="(max-width: 640px) 100vw, (max-width: 1080px) 50vw, 25vw" alt="El Badi Palace in Marrakesh, Morocco" loading="lazy"></picture>
           <div class="card-overlay"></div>
           <div class="card-content"><span>North Africa</span><h3>Morocco · Egypt · Tunisia</h3><p>Ancient cities, desert nights and Mediterranean light.</p></div>
+          <button class="destination-action" type="button" data-destination="Morocco, Egypt or Tunisia"><span class="sr-only">Plan a journey to Morocco, Egypt or Tunisia</span></button>
         </article>
       </div>
     </section>
@@ -198,7 +203,7 @@
     </section>
 
     <section class="group-feature" aria-labelledby="group-feature-title">
-      <div class="group-feature-image" role="img" aria-label="A group hiking through the Owabi Wildlife Sanctuary in Ghana"></div>
+      <picture class="group-feature-image"><source type="image/webp" srcset="group-hiking-720.webp 720w, group-hiking-1600.webp 1600w"><img src="group-hiking.jpg" srcset="group-hiking.jpg 2400w" sizes="(max-width: 1080px) 100vw, 50vw" alt="A group hiking through the Owabi Wildlife Sanctuary in Ghana" loading="lazy"></picture>
       <div class="group-feature-copy">
         <p class="eyebrow">Travel together</p>
         <h2 id="group-feature-title">Go further,<br><em>together.</em></h2>
@@ -210,9 +215,9 @@
 
     <section class="promise" aria-labelledby="promise-title">
       <div class="promise-gallery" aria-hidden="true">
-        <div class="promise-image promise-image-personal is-active"></div>
-        <div class="promise-image promise-image-local"></div>
-        <div class="promise-image promise-image-support"></div>
+        <picture class="promise-image promise-image-personal is-active"><source type="image/webp" srcset="southern-africa-namibia-720.webp 720w, southern-africa-namibia-1600.webp 1600w"><img src="southern-africa-namibia.jpg" srcset="southern-africa-namibia.jpg 3840w" sizes="(max-width: 1080px) 100vw, 50vw" alt="" loading="lazy"></picture>
+        <picture class="promise-image promise-image-local"><source type="image/webp" srcset="north-africa-tunisia-720.webp 720w, north-africa-tunisia-1600.webp 1600w"><img src="north-africa-tunisia.jpg" srcset="north-africa-tunisia.jpg 2400w" sizes="(max-width: 1080px) 100vw, 50vw" alt="" loading="lazy"></picture>
+        <picture class="promise-image promise-image-support"><source type="image/webp" srcset="west-africa-ghana-720.webp 720w, west-africa-ghana-1600.webp 1600w"><img src="west-africa-ghana.jpg" srcset="west-africa-ghana.jpg 2200w" sizes="(max-width: 1080px) 100vw, 50vw" alt="" loading="lazy"></picture>
         <div class="promise-gallery-count"><span class="promise-current">01</span><span>/ 03</span></div>
       </div>
       <div class="promise-copy">
@@ -292,7 +297,7 @@
   <footer>
     <a class="brand footer-brand" href="#top"><span class="brand-mark">H</span><span class="brand-name">HOBTOURS</span></a>
     <p>Tailor-made journeys across Africa.<br>Born in Lomé, travelling further.</p>
-    <div class="footer-links"><a href="group-trips.html">Group trips</a><a href="mailto:houseofbennyhob@gmail.com">Email</a><a href="https://wa.me/22898854118" target="_blank" rel="noopener">WhatsApp</a><button class="js-open-planner" type="button">Trip enquiry</button></div>
+    <div class="footer-links"><a href="group-trips.html">Group trips</a><a href="blog.html">Blog</a><a href="mailto:houseofbennyhob@gmail.com">Email</a><a href="https://wa.me/22898854118" target="_blank" rel="noopener">WhatsApp</a><button class="js-open-planner" type="button">Trip enquiry</button></div>
     <small>© <span id="year"></span> HOBTOURS. All rights reserved. Travel services are subject to availability; visa guidance does not guarantee approval.</small>
     <details class="photo-credits"><summary>Photography credits</summary><p><a href="https://commons.wikimedia.org/wiki/File:A_Bath_During_Sunset_(180185055).jpeg">Elephants: Georg Botz</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:View_over_Fishing_Village_from_Door_of_No_Return_-_Cape_Coast_Castle_-_Cape_Coast_-_Ghana_(4721070633).jpg">Cape Coast: Adam Jones</a> / <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Sossusvlei,_Namibia,_2018-08-06,_DD_050-054_PAN.jpg">Namibia: Diego Delso</a> / <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:El_Badi_Palace,_Marrakesh,_Morocco,_20250125_0944_7096.jpg">Morocco: Jakub Hałun</a> / <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Camels_resting_at_the_Pyramids_of_Giza.jpg">Egypt: Caoimheen3</a> / <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:A_l%27infini.jpg">Tunisia: Amel Belkhodja</a> / <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Hiking_through_Owabi_Wildlife_Sanctuary_and_Ramsar_Site.jpg">Owabi hiking: Els holmes</a> / <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Images cropped and compressed for web presentation.</p></details>
   </footer>
@@ -305,7 +310,7 @@
       <form id="planner-form">
         <label>Your name<input name="name" autocomplete="name" required placeholder="How should we address you?"></label>
         <label>Email address<input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label>
-        <label>Where would you like to go?<input name="destination" required placeholder="A country, region—or 'help me choose'"></label>
+        <label>Where would you like to go?<input id="destination-input" name="destination" required placeholder="A country, region—or 'help me choose'"></label>
         <label>What kind of journey?<select name="interest" id="interest-select"><option value="">Choose an experience</option><option>Culture & Heritage</option><option>Safari & Wildlife</option><option>Coast & Islands</option><option>Roots & Homecoming</option><option>Groups & Celebrations</option></select></label>
         <div class="form-row"><label>Travellers<input type="number" name="travellers" min="1" value="2"></label><label>Ideal timing<input name="timing" placeholder="Month or season"></label></div>
         <label>Tell us more<textarea name="notes" rows="4" placeholder="What would make this trip unforgettable?"></textarea></label>

@@ -4,6 +4,7 @@ const planner = document.querySelector('#trip-planner');
 const plannerForm = document.querySelector('#planner-form');
 const formSuccess = document.querySelector('.form-success');
 const interestSelect = document.querySelector('#interest-select');
+const destinationInput = document.querySelector('#destination-input');
 const hero = document.querySelector('.hero');
 const heroSlides = [...document.querySelectorAll('.hero-media')];
 const heroDots = [...document.querySelectorAll('.hero-dot')];
@@ -86,10 +87,11 @@ nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
   navButton.setAttribute('aria-expanded', 'false');
 }));
 
-function openPlanner(interest = '') {
+function openPlanner(interest = '', destination = '') {
   nav.classList.remove('open');
   navButton.setAttribute('aria-expanded', 'false');
   if (interest) interestSelect.value = interest;
+  if (destination) destinationInput.value = destination;
   plannerForm.hidden = false;
   formSuccess.hidden = true;
   document.body.classList.add('modal-open');
@@ -104,6 +106,7 @@ function closePlanner() {
 
 document.querySelectorAll('.js-open-planner').forEach(button => button.addEventListener('click', () => openPlanner()));
 document.querySelectorAll('.experience-item').forEach(button => button.addEventListener('click', () => openPlanner(button.dataset.interest)));
+document.querySelectorAll('.destination-action').forEach(button => button.addEventListener('click', () => openPlanner('', button.dataset.destination)));
 document.querySelector('.planner-close').addEventListener('click', closePlanner);
 document.querySelector('.planner-done').addEventListener('click', closePlanner);
 planner.addEventListener('click', event => { if (event.target === planner) closePlanner(); });
